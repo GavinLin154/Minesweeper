@@ -77,6 +77,9 @@ public void displayLosingMessage()
         }  
       }  
     }  
+    for(int i = 0; i < mines.size(); i++) {
+      mines.get(i).setLabel("L");
+    }  
     for(int j = 0; j < mines.size(); j++) {
       mines.get(j).setFlagged(false);
     }  
