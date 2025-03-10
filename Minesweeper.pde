@@ -72,7 +72,9 @@ public void displayLosingMessage()
 {
     for(int i = 0; i < buttons.length; i++) {
       for(int j = 0; j < buttons[i].length; j++) {
-        buttons[i][j].setLabel("L");
+        if(!buttons[i][j].isClicked()) {
+          buttons[i][j].setLabel("L");
+        }  
       }  
     }  
     for(int j = 0; j < mines.size(); j++) {
